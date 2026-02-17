@@ -1,482 +1,539 @@
 <!DOCTYPE html>
-<html class="light" lang="pt-BR"><head>
+<html lang="pt-BR"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Panini - Copa 2026 Álbum Oficial</title>
+<title>Álbum Oficial Copa 2026 - Panini</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 <script>
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     colors: {
-                        primary: "#E20613", // Panini Red
-                        secondary: "#FFD400", // Panini Yellow
-                        accent: "#22C55E", // Success/Green
-                        "background-light": "#FFFFFF",
+                        primary: "#10b981", // Green for CTA and highlights
+                        secondary: "#fbbf24", // Yellow for Panini
+                        accent: "#b91c1c", // Red for urgency
+                        "panini-yellow": "#FFCC00",
+                        "panini-red": "#E30613",
+                        "background-light": "#ffffff",
                         "background-dark": "#111827",
+                        "card-light": "#f9fafb",
+                        "card-dark": "#1f2937",
+                        "text-light": "#1f2937",
+                        "text-dark": "#f3f4f6",
+                        "text-muted-light": "#6b7280",
+                        "text-muted-dark": "#9ca3af",
+                        "border-light": "#e5e7eb",
+                        "border-dark": "#374151",
                     },
                     fontFamily: {
-                        display: ["Inter", "sans-serif"],
+                        display: ["Poppins", "sans-serif"],
+                        body: ["Poppins", "sans-serif"],
                     },
                     borderRadius: {
-                        DEFAULT: "12px",
+                        DEFAULT: "0.5rem",
                     },
                 },
             },
         };
     </script>
 <style>
-        body { font-family: 'Inter', sans-serif; }
-        .material-symbols-rounded { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24 }
-        .kit-selected { border-color: #22C55E; background-color: #F0FDF4; }
-        .dark .kit-selected { border-color: #22C55E; background-color: #064E3B; }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }.kit-radio:checked + div {
+            border-color: #10b981;
+            background-color: rgba(16, 185, 129, 0.05);
+        }
+        .kit-radio:checked + div .radio-circle {
+            border-color: #10b981;
+            background-color: #10b981;
+            box-shadow: inset 0 0 0 4px white;
+        }
+        .dark .kit-radio:checked + div .radio-circle {
+            box-shadow: inset 0 0 0 4px #1f2937;
+        }
     </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
-  </head>
-<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
-<header class="bg-secondary py-3 flex justify-center sticky top-0 z-50 shadow-sm">
-<img alt="Panini Logo" class="h-8 md:h-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5oDQ0Wl003Jt8M_QYfR2SMA_08sSG4NrPcJEU7zir4PaxTApYY9bb3jTm3YLnVGAWl-FCirkGTDsMOvVyAFBkK8aRrDLW4mpcT-vvlW1w4E13ZFsvkrMdrOxoTYOQuR8mQNC2PmN5VPdVBRL_ePVpZ8ykbYiLsQIIktX-cIDg-V6MSvkXjJHO08joXZI-JdMcf4LfNsdAmQ-LrO7QeWJd065wYekt7I9sp5326X9d_NIjFFo8IFj31aejdziH-dYwL4FS9K570rvd"/>
-</header>
-<div class="flex">
-<div class="w-1/2 bg-primary text-white text-center py-2 px-2">
-<p class="text-[10px] uppercase font-bold tracking-wider">Encerra em:</p>
-<p class="text-xl font-black">14:49</p>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased">
+<div class="fixed top-0 w-full z-50 bg-white dark:bg-gray-900 shadow-sm border-b border-border-light dark:border-border-dark">
+<div class="container mx-auto px-4 py-2 flex justify-between items-center max-w-4xl">
+<div class="h-8 md:h-10 bg-panini-yellow px-2 flex items-center justify-center border-2 border-black/10 rounded-sm">
+<span class="font-extrabold text-panini-red tracking-widest text-lg md:text-xl italic px-1" style="text-shadow: 1px 1px 0px rgba(0,0,0,0.1);">PANINI</span>
 </div>
-<div class="w-1/2 bg-[#800F2F] text-white text-center py-2 px-2">
-<p class="text-[10px] uppercase font-bold tracking-wider">Restam:</p>
-<p class="text-xl font-black">127 Unidades</p>
+<div class="flex gap-2 text-xs font-semibold text-white">
+<div class="bg-accent px-3 py-1.5 rounded flex items-center shadow-sm">
+<span>Encerra em:  </span>
+<span class="font-bold" id="timer">14:50</span>
+</div>
+<div class="bg-accent px-3 py-1.5 rounded flex items-center shadow-sm">
+<span>Restam:  </span>
+<span class="font-bold">127 Unidades</span>
 </div>
 </div>
-<main class="max-w-md mx-auto px-4 pt-6 pb-20">
-<section class="text-center mb-8">
-<div class="bg-secondary text-[#800F2F] font-bold text-xs py-1 px-4 rounded-full inline-block mb-6 shadow-sm">
-                COMPRA ÚNICA POR CPF
+</div>
+</div>
+<main class="container mx-auto px-4 py-8 mt-16 max-w-2xl flex flex-col items-center">
+<div class="text-center w-full mb-8">
+<div class="inline-block bg-secondary text-black font-bold text-xs px-4 py-1.5 rounded-full mb-6 uppercase tracking-wide shadow-sm">
+                Compra Única por CPF
             </div>
-<div class="flex flex-col items-center mb-4">
-<img alt="Copa 2026 Logo" class="w-24 mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiyEqRKSZYKIgkYoGBUkFROaPUF7SboopJoP7vGLhoXC659Wwbh3VEpd3-Mmporw4sRj3UqeK4pKdwiocPpAtUDH-LWqyjiJFeUZyQgVqs5pbcu9wE3pnmxLYstTWvzFtJ7TLHywCMN6dihymnWPRE1czurY8VTSVpXFX-bUUoa1fRco4MN8iszATx429lHKcB6oYiwyMqNpEdBPafFvzxN6Gfor3qpsdyE9kkF0298BAmWz5Lfj2rskifalBvECJ4HmO0lwQ3eIKm"/>
-<p class="text-[10px] font-bold tracking-widest text-slate-500 uppercase">Álbum Oficial</p>
-<p class="text-[10px] font-bold text-slate-400 uppercase">EUA • Canadá • México</p>
-<h1 class="text-4xl font-black mt-2 leading-tight">COPA 2026</h1>
+<div class="mb-4 flex flex-col items-center">
+<div class="w-24 h-32 relative mb-2 flex items-center justify-center">
+<img alt="FIFA World Cup 2026 Logo" class="object-contain h-full drop-shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY8WbV5evoVQeZN9KY60_oC9yO4r_67YNNqDH3S3oAm7P3w5DOqsYBREQROXHRfLWsVdWIwdD57vWyqipEyBF62eeIjp698yCsfU5Jc88Yq40PuYUMHjxb7IrJP9XYersIZRtt_eWKxgW-ZBEyP2ZbpbUoHFyy1HakRzS_7DSy-Zy11id624fm-wOQfhA3vXsenxO_-i5tSxpDBvWLNxDqGiDc6C4LkWqXFwvQBvN3ugPwuPFeu_j2NS2ZAMBywecsqbldPAPMIZY"/>
 </div>
-<p class="text-slate-600 dark:text-slate-400 font-medium mb-4">O maior evento do futebol mundial está chegando!</p>
-<p class="text-sm text-slate-500 dark:text-slate-400 mb-6">Garanta seu álbum de capa dura com 30, 60 ou 90 pacotes de figurinhas inclusos.</p>
-<p class="text-sm font-bold text-primary mb-6 italic">Apenas 5.000 unidades disponíveis para o Brasil!</p>
-<div class="rounded-2xl overflow-hidden shadow-xl mb-8">
-<img alt="Copa 2026 Collection" class="w-full h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkOrU2xdw1hkhIeiVYMM8BXZ5NJIibqXe6h0WPOvwGhtMpiMR8OE3zFacs5qGSjyETdXeF1p4WFdSChpZNyqfTAoPXylY00M2z1TWN8qssowyfNSsOZTAkvy23dMiZM7vqwgb2eGuwM02mKWkVD8FHMGQU7blPgtCzHX2hvatcNfXrZMJalmvozrrbm6hNGmewx99Cxo10HpewnoiEqinFboDRmi3GMl3cUFDOFxa9_4WajjyUGJYSxcukteFvdnSNywFqFBaBw6HD"/>
+<h3 class="text-sm font-semibold tracking-widest uppercase text-text-muted-light dark:text-text-muted-dark mb-1">ÁLBUM OFICIAL</h3>
+<p class="text-xs text-text-muted-light dark:text-text-muted-dark font-medium mb-2">EUA • Canadá • México</p>
+<h1 class="text-4xl md:text-5xl font-extrabold text-black dark:text-white mb-4 tracking-tight">COPA 2026</h1>
+<p class="text-sm md:text-base text-text-muted-light dark:text-text-muted-dark mb-2">O maior evento do futebol mundial está chegando!</p>
+<p class="text-sm md:text-base text-text-muted-light dark:text-text-muted-dark max-w-md mx-auto">Garanta seu álbum de capa dura com 30, 60 ou 90 pacotes de figurinhas inclusos.</p>
+<p class="text-sm font-bold mt-4 text-gray-800 dark:text-gray-200">Apenas 5.000 unidades disponíveis para o Brasil!</p>
 </div>
-</section>
-<section class="mb-12" id="kits">
-<div class="text-center mb-8">
-<h2 class="text-2xl font-black mb-2">Escolha seu Kit</h2>
-<p class="text-sm text-slate-500">Quanto mais pacotes, mais chances de completar o álbum!</p>
+<div class="relative w-full max-w-lg mx-auto aspect-square md:aspect-[4/3] mb-8 bg-gray-100 dark:bg-gray-800 rounded-xl overflow-hidden flex items-center justify-center shadow-inner">
+<img alt="Kit Álbum Copa 2026 com pacotes de figurinhas" class="object-contain w-full h-full mix-blend-multiply dark:mix-blend-normal transform scale-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHDO3ChQuPjh6qV3k9Xn7uVcn9W5JqAjrh6P2-320gdxAtT3IQ4vUkebtVbyxfrM6ZZ2lI5dMeB54fxAcj0RpeKtK7CgopbhvV10M3yLQfooq1An8hhXgg6zkxCX3qcLnSMmkkeWCrpIh-Ipp4GgDNPLCMB8zhiL3WlQJS2p6nhxIYmtE0A8ZJIMn7FEWln06EHnweUtHRxd_gZQQIDu-vEeGHnfJjd86eUBgWtKWI3JazTkgfa3zywL2sxFBTfFll5J6Vr0fpF70"/>
 </div>
-<div class="space-y-4">
-<label class="relative block border-2 border-slate-200 dark:border-slate-800 rounded-2xl p-4 cursor-pointer hover:border-accent transition-all group">
-<input class="hidden peer" name="kit" type="radio" value="basico"/>
+</div>
+<div class="w-full mb-10">
+<h2 class="text-2xl font-bold text-center mb-2">Escolha seu Kit</h2>
+<p class="text-center text-xs text-text-muted-light dark:text-text-muted-dark mb-6">Quanto mais pacotes, mais chances de completar o álbum!</p>
+<div class="space-y-3">
+<label class="cursor-pointer block relative group">
+<input class="kit-radio sr-only" name="kit" type="radio" value="basico"/>
+<div class="flex items-center justify-between p-4 border-2 border-border-light dark:border-border-dark rounded-xl bg-white dark:bg-card-dark hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-200 shadow-sm relative overflow-hidden">
+<span class="absolute top-0 right-0 bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-bl-lg rounded-tr-sm z-10">-53%</span>
 <div class="flex items-center gap-4">
-<div class="w-6 h-6 rounded-full border-2 border-slate-300 peer-checked:border-accent peer-checked:bg-accent flex items-center justify-center">
-<div class="w-2.5 h-2.5 bg-white rounded-full"></div>
+<div class="radio-circle w-5 h-5 rounded-full border-2 border-gray-300 dark:border-gray-500 flex-shrink-0 transition-colors"></div>
+<div class="w-12 h-12 bg-gray-100 dark:bg-gray-700 rounded-lg flex items-center justify-center p-1">
+<span class="material-icons text-gray-400 dark:text-gray-500 text-2xl">grid_view</span>
 </div>
-<img alt="Kit Básico" class="w-16 h-16 rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnWLGLs5AC8776_aiEyQfgycm59rOpsra2erpUxMC7nmElYB_qZ7HSde3OE8L4Zl0vMlLyXb204TOKuTSDSAlvXExQ5XTxjIfvXBcUfy-Zy3IDOXwqD3Qt6H77QMH4_zWA3dQcxqKy-JW43PPuQL6Qc0BFJBqutyBk7A_yzlLxotlzOzwfdJ-X6L4IG62RTxE9xJTF7ecz5daawWc1anrX4kMqA0km523EQKBHdXy7wavKOVu-Ri838T2gXIZsIluULgZn34pT-pqr"/>
-<div class="flex-1">
-<div class="flex justify-between items-start">
-<h3 class="font-bold">Kit Básico</h3>
-<div class="bg-accent text-white text-[10px] font-bold px-2 py-0.5 rounded-full">-53%</div>
-</div>
-<p class="text-[10px] text-slate-500">1 Álbum Capa Dura + 10 Pacotes</p>
-<p class="text-[10px] text-accent font-bold mt-1">70 figurinhas • Frete Grátis</p>
-</div>
-<div class="text-right">
-<p class="text-[10px] text-slate-400 line-through">R$ 84,29</p>
-<p class="text-lg font-black leading-none">R$ 39,90</p>
-<p class="text-[9px] font-bold text-slate-400">via PIX</p>
+<div>
+<h3 class="font-bold text-sm text-gray-900 dark:text-white">Kit Básico</h3>
+<p class="text-[10px] text-gray-500 dark:text-gray-400">1 Álbum Capa Dura + 10 Pacotes</p>
+<div class="flex gap-2 mt-1">
+<span class="bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-[9px] px-1.5 py-0.5 rounded">70 figurinhas</span>
+<span class="bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 text-[9px] px-1.5 py-0.5 rounded font-medium">Frete Grátis</span>
 </div>
 </div>
-<div class="mt-2 text-center py-1 bg-accent/10 rounded-lg">
-<p class="text-[10px] text-accent font-bold">Você economiza R$ 44,39</p>
-</div>
-</label>
-<label class="relative block border-2 border-slate-200 dark:border-slate-800 rounded-2xl p-4 cursor-pointer hover:border-accent transition-all group">
-<div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-white text-[10px] font-black px-4 py-1 rounded-full uppercase">Mais Vendido</div>
-<input class="hidden peer" name="kit" type="radio" value="iniciante"/>
-<div class="flex items-center gap-4 mt-1">
-<div class="w-6 h-6 rounded-full border-2 border-slate-300 peer-checked:border-accent peer-checked:bg-accent flex items-center justify-center">
-<div class="w-2.5 h-2.5 bg-white rounded-full"></div>
-</div>
-<img alt="Kit Iniciante" class="w-16 h-16 rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmV9pKhPZs8qgBaHbpzoRuZsZVjvWZVox8ABDX5FXvWk2s2QASJqOCJaSQfoicfd-pAt8fKqgrCt6XKRRe7l_5NLb0kma_IDwxnUvR-_XBjvFrgA_z91t1Ft3s_W6k721g5DFqnBBwUaF5XPk7ERP3wBPlGUchKpXQzCmfqj01rFIa3hp7Ccwd53RDK8ZBiuez923KzVncbT8wS5rcuX0Y57_-k8aK3g8VVlM3FO_ZoqqsZxFYKh2Ps6lFEwJREFOXzVOQryhk1EbX"/>
-<div class="flex-1">
-<div class="flex justify-between items-start">
-<h3 class="font-bold">Kit Iniciante</h3>
-<div class="bg-accent text-white text-[10px] font-bold px-2 py-0.5 rounded-full">-60%</div>
-</div>
-<p class="text-[10px] text-slate-500">1 Álbum Capa Dura + 30 Pacotes</p>
-<p class="text-[10px] text-accent font-bold mt-1">210 figurinhas • Frete Grátis</p>
 </div>
 <div class="text-right">
-<p class="text-[10px] text-slate-400 line-through">R$ 149,23</p>
-<p class="text-lg font-black leading-none">R$ 59,90</p>
-<p class="text-[9px] font-bold text-slate-400">via PIX</p>
+<div class="text-[10px] text-gray-400 dark:text-gray-500 line-through">R$ 84,90</div>
+<div class="text-lg font-bold text-gray-900 dark:text-white leading-none">R$ 39,90</div>
+<div class="text-[9px] text-gray-400">via PIX</div>
 </div>
 </div>
-<div class="mt-2 text-center py-1 bg-accent/10 rounded-lg">
-<p class="text-[10px] text-accent font-bold">Você economiza R$ 89,33</p>
+<div class="text-center mt-1">
+<span class="text-[10px] text-green-500 font-medium">Você economiza R$ 44,59</span>
 </div>
 </label>
-<label class="relative block border-2 border-slate-200 dark:border-slate-800 rounded-2xl p-4 cursor-pointer hover:border-accent transition-all group">
-<input class="hidden peer" name="kit" type="radio" value="campeao"/>
+<label class="cursor-pointer block relative group">
+<input class="kit-radio sr-only" name="kit" type="radio" value="iniciante"/>
+<div class="relative flex items-center justify-between p-4 border-2 border-border-light dark:border-border-dark rounded-xl bg-white dark:bg-card-dark hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-200 shadow-sm overflow-visible">
+<span class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full z-20 shadow-sm uppercase tracking-wider">Mais Vendido</span>
+<span class="absolute top-0 right-0 bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-bl-lg rounded-tr-sm z-10">-60%</span>
 <div class="flex items-center gap-4">
-<div class="w-6 h-6 rounded-full border-2 border-slate-300 peer-checked:border-accent peer-checked:bg-accent flex items-center justify-center">
-<div class="w-2.5 h-2.5 bg-white rounded-full"></div>
+<div class="radio-circle w-5 h-5 rounded-full border-2 border-gray-300 dark:border-gray-500 flex-shrink-0 transition-colors"></div>
+<div class="w-12 h-12 bg-gray-100 dark:bg-gray-700 rounded-lg flex items-center justify-center p-1">
+<span class="material-icons text-gray-400 dark:text-gray-500 text-2xl">view_module</span>
 </div>
-<img alt="Kit Campeão" class="w-16 h-16 rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4e1gslkA_dcx1wCm955Ac_1iE3Yrziak6uVVyW9NgEyfObm0k8qTQxAAMny3yGfVXr-gN7y9bahABBS3AXRVCRyAxKtyIPLaPOhgqM_R1c9yxQEjk0Qo6Rv7QdkOUR052gWzG6dAy8YfBpCrKmQBCIF3vOieqrIgxjW9TwqcQiqODJ9wHq9On3MsY-CravbKJ6oa9C299oXzEl05qm_gAVSbTnWmIQUWGys4svlyazDzdyJHs-0uI4s9fNwUSlC6z2Jx5zevSJIbN"/>
-<div class="flex-1">
-<div class="flex justify-between items-start">
-<h3 class="font-bold">Kit Campeão</h3>
-<div class="bg-accent text-white text-[10px] font-bold px-2 py-0.5 rounded-full">-74%</div>
+<div>
+<h3 class="font-bold text-sm text-gray-900 dark:text-white">Kit Iniciante</h3>
+<p class="text-[10px] text-gray-500 dark:text-gray-400">1 Álbum Capa Dura + 30 Pacotes</p>
+<div class="flex gap-2 mt-1">
+<span class="bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-[9px] px-1.5 py-0.5 rounded">210 figurinhas</span>
+<span class="bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 text-[9px] px-1.5 py-0.5 rounded font-medium">Frete Grátis</span>
 </div>
-<p class="text-[10px] text-slate-500">1 Álbum Capa Dura + 60 Pacotes</p>
-<p class="text-[10px] text-accent font-bold mt-1">420 figurinhas • Frete Grátis</p>
+</div>
 </div>
 <div class="text-right">
-<p class="text-[10px] text-slate-400 line-through">R$ 372,50</p>
-<p class="text-lg font-black leading-none">R$ 97,90</p>
-<p class="text-[9px] font-bold text-slate-400">via PIX</p>
+<div class="text-[10px] text-gray-400 dark:text-gray-500 line-through">R$ 149,90</div>
+<div class="text-lg font-bold text-gray-900 dark:text-white leading-none">R$ 59,90</div>
+<div class="text-[9px] text-gray-400">via PIX</div>
 </div>
 </div>
-<div class="mt-2 text-center py-1 bg-accent/10 rounded-lg">
-<p class="text-[10px] text-accent font-bold">Você economiza R$ 274,60</p>
+<div class="text-center mt-1">
+<span class="text-[10px] text-green-500 font-medium">Você economiza R$ 89,33</span>
 </div>
 </label>
-<label class="relative block border-2 border-accent bg-accent/5 dark:bg-accent/10 rounded-2xl p-4 cursor-pointer transition-all group">
-<input checked="" class="hidden peer" name="kit" type="radio" value="colecionador"/>
+<label class="cursor-pointer block relative group">
+<input class="kit-radio sr-only" name="kit" type="radio" value="campeao"/>
+<div class="flex items-center justify-between p-4 border-2 border-border-light dark:border-border-dark rounded-xl bg-white dark:bg-card-dark hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-200 shadow-sm relative overflow-hidden">
+<span class="absolute top-0 right-0 bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-bl-lg rounded-tr-sm z-10">-74%</span>
 <div class="flex items-center gap-4">
-<div class="w-6 h-6 rounded-full border-2 border-accent bg-accent flex items-center justify-center">
-<div class="w-2.5 h-2.5 bg-white rounded-full"></div>
+<div class="radio-circle w-5 h-5 rounded-full border-2 border-gray-300 dark:border-gray-500 flex-shrink-0 transition-colors"></div>
+<div class="w-12 h-12 bg-gray-100 dark:bg-gray-700 rounded-lg flex items-center justify-center p-1">
+<span class="material-icons text-gray-400 dark:text-gray-500 text-2xl">view_comfy</span>
 </div>
-<img alt="Kit Colecionador" class="w-16 h-16 rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAb2ThrA36om6-OzWcyfTwS0d2WF8ytS31qauFmxkQr1Twb8_AfhAH3656brC78hLrDBkHZu3JjfTpAfrOPGW1ZEam1C6C8t_rfT8hslN0B_hDEbLItGEIQwIug4euU1KsF6brMl9TxQUF_J3KxLUymQ8Uk6zg3TEx11gyHvEccmdviL2iBlQ7J2Zi4sVCS_2vUfL7xnW2HuUMir0mFbG8nIwhU-edZ5ErEY5-AhPK6_D4dFjjzVSRix52FB_dTSsktlAt9f5Bh_xIV"/>
-<div class="flex-1">
-<div class="flex justify-between items-start">
-<h3 class="font-bold">Kit Colecionador</h3>
-<div class="bg-accent text-white text-[10px] font-bold px-2 py-0.5 rounded-full">-85%</div>
+<div>
+<h3 class="font-bold text-sm text-gray-900 dark:text-white">Kit Campeão</h3>
+<p class="text-[10px] text-gray-500 dark:text-gray-400">1 Álbum Capa Dura + 60 Pacotes</p>
+<div class="flex gap-2 mt-1">
+<span class="bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-[9px] px-1.5 py-0.5 rounded">420 figurinhas</span>
+<span class="bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 text-[9px] px-1.5 py-0.5 rounded font-medium">Frete Grátis</span>
 </div>
-<p class="text-[10px] text-slate-500">1 Álbum Capa Dura + 90 Pacotes</p>
-<p class="text-[10px] text-accent font-bold mt-1">630 figurinhas • Frete Grátis</p>
+</div>
 </div>
 <div class="text-right">
-<p class="text-[10px] text-slate-400 line-through">R$ 796,20</p>
-<p class="text-lg font-black leading-none">R$ 119,90</p>
-<p class="text-[9px] font-bold text-slate-400">via PIX</p>
+<div class="text-[10px] text-gray-400 dark:text-gray-500 line-through">R$ 371,90</div>
+<div class="text-lg font-bold text-gray-900 dark:text-white leading-none">R$ 97,90</div>
+<div class="text-[9px] text-gray-400">via PIX</div>
 </div>
 </div>
-<div class="mt-2 text-center py-1 bg-accent/20 rounded-lg">
-<p class="text-[10px] text-accent font-bold">Você economiza R$ 676,30</p>
+<div class="text-center mt-1">
+<span class="text-[10px] text-green-500 font-medium">Você economiza R$ 274,60</span>
+</div>
+</label>
+<label class="cursor-pointer block relative group">
+<input checked="" class="kit-radio sr-only" name="kit" type="radio" value="colecionador"/>
+<div class="flex items-center justify-between p-4 border-2 border-border-light dark:border-border-dark rounded-xl bg-white dark:bg-card-dark hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-200 shadow-sm relative overflow-hidden ring-1 ring-primary/20">
+<span class="absolute top-0 right-0 bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-bl-lg rounded-tr-sm z-10">-85%</span>
+<div class="flex items-center gap-4">
+<div class="radio-circle w-5 h-5 rounded-full border-2 border-gray-300 dark:border-gray-500 flex-shrink-0 transition-colors"></div>
+<div class="w-12 h-12 bg-gray-100 dark:bg-gray-700 rounded-lg flex items-center justify-center p-1">
+<span class="material-icons text-gray-400 dark:text-gray-500 text-2xl">apps</span>
+</div>
+<div>
+<h3 class="font-bold text-sm text-gray-900 dark:text-white">Kit Colecionador</h3>
+<p class="text-[10px] text-gray-500 dark:text-gray-400">1 Álbum Capa Dura + 90 Pacotes</p>
+<div class="flex gap-2 mt-1">
+<span class="bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-[9px] px-1.5 py-0.5 rounded">630 figurinhas</span>
+<span class="bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 text-[9px] px-1.5 py-0.5 rounded font-medium">Frete Grátis</span>
+</div>
+</div>
+</div>
+<div class="text-right">
+<div class="text-[10px] text-gray-400 dark:text-gray-500 line-through">R$ 795,90</div>
+<div class="text-lg font-bold text-gray-900 dark:text-white leading-none">R$ 119,90</div>
+<div class="text-[9px] text-gray-400">via PIX</div>
+</div>
+</div>
+<div class="text-center mt-1">
+<span class="text-[10px] text-green-500 font-medium">Você economiza R$ 676,10</span>
 </div>
 </label>
 </div>
-<div class="mt-8 text-center">
-<button class="w-full bg-accent hover:bg-green-600 text-white font-black py-5 rounded-2xl shadow-lg shadow-accent/30 transition-all transform active:scale-95 uppercase tracking-wide">
+<div class="mt-8">
+<button id="finalizarCompra" class="w-full bg-primary hover:bg-green-600 text-white font-bold py-4 px-6 rounded-lg text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 uppercase tracking-wide">
                     GARANTIR MEU KIT AGORA
                 </button>
-<p class="text-[10px] text-slate-400 mt-4 flex items-center justify-center gap-1">
-<span class="material-symbols-rounded text-[14px]">local_shipping</span> Frete Grátis para Todo Brasil
-                </p>
+<p class="text-center text-[10px] text-gray-500 dark:text-gray-400 mt-2 font-medium">Frete Grátis para Todo Brasil</p>
 </div>
-</section>
-<section class="mb-12">
-<h2 class="text-xl font-black text-center mb-1">Sobre o Álbum Oficial</h2>
-<div class="flex items-center justify-center gap-1 text-[10px] font-bold text-amber-500 uppercase mb-6">
-<span class="material-symbols-rounded text-[16px]">emoji_events</span> Edição Histórica
-            </div>
-<div class="grid grid-cols-2 gap-3 mb-6">
-<div class="bg-slate-50 dark:bg-slate-900 p-4 rounded-2xl text-center">
-<span class="material-symbols-rounded text-primary mb-2">menu_book</span>
-<p class="text-sm font-black">112 Páginas</p>
-<p class="text-[9px] text-slate-500">O maior álbum já produzido</p>
 </div>
-<div class="bg-slate-50 dark:bg-slate-900 p-4 rounded-2xl text-center">
-<span class="material-symbols-rounded text-primary mb-2">style</span>
-<p class="text-sm font-black">980 Figurinhas</p>
-<p class="text-[9px] text-slate-500">Coleção completa mais extensa</p>
+<div class="w-full mb-12">
+<h2 class="text-xl md:text-2xl font-bold text-center mb-1">Sobre o Álbum Oficial</h2>
+<div class="flex items-center justify-center gap-1 mb-4 text-yellow-500 dark:text-yellow-400">
+<span class="material-icons text-sm">emoji_events</span>
+<span class="text-[10px] font-bold uppercase tracking-wide">Edição Histórica</span>
 </div>
-<div class="bg-slate-50 dark:bg-slate-900 p-4 rounded-2xl text-center">
-<span class="material-symbols-rounded text-primary mb-2">package_2</span>
-<p class="text-sm font-black">7 Figurinhas por Pacote</p>
-<p class="text-[9px] text-slate-500">Maior chance de figurinhas cromadas</p>
+<p class="text-center text-xs text-text-muted-light dark:text-text-muted-dark mb-8">O maior álbum da história da Copa do Mundo</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+<div class="bg-card-light dark:bg-card-dark p-4 rounded-lg text-center shadow-sm">
+<span class="material-icons text-accent text-3xl mb-2">menu_book</span>
+<h4 class="font-bold text-sm text-gray-900 dark:text-white">112 Páginas</h4>
+<p class="text-[10px] text-gray-500 dark:text-gray-400 leading-tight">O maior álbum já produzido</p>
 </div>
-<div class="bg-slate-50 dark:bg-slate-900 p-4 rounded-2xl text-center">
-<span class="material-symbols-rounded text-primary mb-2">public</span>
-<p class="text-sm font-black">48 Seleções</p>
-<p class="text-[9px] text-slate-500">Todas as equipes classificadas</p>
+<div class="bg-card-light dark:bg-card-dark p-4 rounded-lg text-center shadow-sm">
+<span class="material-icons text-accent text-3xl mb-2">content_copy</span>
+<h4 class="font-bold text-sm text-gray-900 dark:text-white">980 Figurinhas</h4>
+<p class="text-[10px] text-gray-500 dark:text-gray-400 leading-tight">Coleção completa mais extensa</p>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-4 rounded-lg text-center shadow-sm">
+<span class="material-icons text-accent text-3xl mb-2">layers</span>
+<h4 class="font-bold text-sm text-gray-900 dark:text-white">7 Figurinhas por Pacote</h4>
+<p class="text-[10px] text-gray-500 dark:text-gray-400 leading-tight">Maior chance de figurinhas cromadas</p>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-4 rounded-lg text-center shadow-sm">
+<span class="material-icons text-accent text-3xl mb-2">public</span>
+<h4 class="font-bold text-sm text-gray-900 dark:text-white">48 Seleções</h4>
+<p class="text-[10px] text-gray-500 dark:text-gray-400 leading-tight">Todas as equipes classificadas</p>
 </div>
 </div>
 <div class="space-y-2">
-<div class="flex items-center gap-3 bg-slate-50 dark:bg-slate-900 p-3 rounded-xl">
-<span class="material-symbols-rounded text-accent">check_circle</span>
-<p class="text-xs font-medium">Primeira Copa do Mundo com 48 seleções</p>
+<div class="flex items-center gap-3 bg-card-light dark:bg-card-dark p-3 rounded-lg">
+<span class="material-icons text-primary text-sm bg-green-100 dark:bg-green-900 rounded-full p-0.5">check</span>
+<span class="text-xs font-medium text-gray-700 dark:text-gray-300">Primeira Copa do Mundo com 48 seleções</span>
 </div>
-<div class="flex items-center gap-3 bg-slate-50 dark:bg-slate-900 p-3 rounded-xl">
-<span class="material-symbols-rounded text-accent">check_circle</span>
-<p class="text-xs font-medium">Álbum com 112 páginas - recorde histórico</p>
+<div class="flex items-center gap-3 bg-card-light dark:bg-card-dark p-3 rounded-lg">
+<span class="material-icons text-primary text-sm bg-green-100 dark:bg-green-900 rounded-full p-0.5">check</span>
+<span class="text-xs font-medium text-gray-700 dark:text-gray-300">Álbum com 112 páginas - recorde histórico</span>
 </div>
-<div class="flex items-center gap-3 bg-slate-50 dark:bg-slate-900 p-3 rounded-xl">
-<span class="material-symbols-rounded text-accent">check_circle</span>
-<p class="text-xs font-medium">Três países-sede: EUA, Canadá e México</p>
+<div class="flex items-center gap-3 bg-card-light dark:bg-card-dark p-3 rounded-lg">
+<span class="material-icons text-primary text-sm bg-green-100 dark:bg-green-900 rounded-full p-0.5">check</span>
+<span class="text-xs font-medium text-gray-700 dark:text-gray-300">Três países-sede: EUA, Canadá e México</span>
 </div>
 </div>
-</section>
-<section class="mb-12">
-<h2 class="text-xl font-black text-center mb-8">Por que garantir seu kit agora?</h2>
+</div>
+<div class="w-full mb-12">
+<h2 class="text-xl font-bold text-center mb-8">Por que garantir seu kit agora?</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex items-start gap-4 p-4 bg-gray-50 dark:bg-card-dark rounded-lg">
+<div class="bg-accent text-white p-2 rounded-lg flex items-center justify-center">
+<span class="material-icons">percent</span>
+</div>
+<div>
+<h4 class="font-bold text-sm text-gray-900 dark:text-white">Desconto de 47% exclusivo</h4>
+<p class="text-[10px] text-gray-500 dark:text-gray-400">Desconto exclusivo de pré-venda</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-gray-50 dark:bg-card-dark rounded-lg">
+<div class="bg-accent text-white p-2 rounded-lg flex items-center justify-center">
+<span class="material-icons">local_shipping</span>
+</div>
+<div>
+<h4 class="font-bold text-sm text-gray-900 dark:text-white">Entrega prioritária</h4>
+<p class="text-[10px] text-gray-500 dark:text-gray-400">Receba antes do lançamento oficial</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-gray-50 dark:bg-card-dark rounded-lg">
+<div class="bg-accent text-white p-2 rounded-lg flex items-center justify-center">
+<span class="material-icons">verified_user</span>
+</div>
+<div>
+<h4 class="font-bold text-sm text-gray-900 dark:text-white">Produto original Panini</h4>
+<p class="text-[10px] text-gray-500 dark:text-gray-400">Álbum oficial 100% autêntico</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-gray-50 dark:bg-card-dark rounded-lg">
+<div class="bg-accent text-white p-2 rounded-lg flex items-center justify-center">
+<span class="material-icons">inventory_2</span>
+</div>
+<div>
+<h4 class="font-bold text-sm text-gray-900 dark:text-white">Frete Grátis</h4>
+<p class="text-[10px] text-gray-500 dark:text-gray-400">Entrega grátis para todo o Brasil</p>
+</div>
+</div>
+</div>
+<div class="flex justify-center gap-6 mt-6 text-[10px] text-green-600 dark:text-green-400 font-medium">
+<div class="flex items-center gap-1">
+<span class="material-icons text-sm">check_circle_outline</span> Compra 100% Segura
+                </div>
+<div class="flex items-center gap-1">
+<span class="material-icons text-sm">lock_outline</span> Dados Protegidos
+                </div>
+<div class="flex items-center gap-1">
+<span class="material-icons text-sm">verified</span> Produto Original
+                </div>
+</div>
+</div>
+<div class="w-full mb-12">
+<h2 class="text-xl font-bold text-center mb-8">O que nossos clientes dizem</h2>
 <div class="space-y-4">
-<div class="flex items-center gap-4 bg-slate-50 dark:bg-slate-900 p-4 rounded-2xl">
-<div class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
-<span class="material-symbols-rounded text-primary">percent</span>
-</div>
-<div>
-<p class="text-sm font-bold">Desconto de 47% exclusivo</p>
-<p class="text-[10px] text-slate-500">Desconto exclusivo de pré-venda</p>
-</div>
-</div>
-<div class="flex items-center gap-4 bg-slate-50 dark:bg-slate-900 p-4 rounded-2xl">
-<div class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
-<span class="material-symbols-rounded text-primary">local_shipping</span>
-</div>
-<div>
-<p class="text-sm font-bold">Entrega prioritária</p>
-<p class="text-[10px] text-slate-500">Receba antes do lançamento oficial</p>
-</div>
-</div>
-<div class="flex items-center gap-4 bg-slate-50 dark:bg-slate-900 p-4 rounded-2xl">
-<div class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
-<span class="material-symbols-rounded text-primary">verified_user</span>
-</div>
-<div>
-<p class="text-sm font-bold">Produto original Panini</p>
-<p class="text-[10px] text-slate-500">Álbum oficial 100% autêntico</p>
-</div>
-</div>
-<div class="flex items-center gap-4 bg-slate-50 dark:bg-slate-900 p-4 rounded-2xl">
-<div class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
-<span class="material-symbols-rounded text-primary">package</span>
-</div>
-<div>
-<p class="text-sm font-bold">Frete Grátis</p>
-<p class="text-[10px] text-slate-500">Entrega grátis para todo o Brasil</p>
-</div>
-</div>
-</div>
-<div class="flex justify-center gap-4 mt-8 opacity-60">
-<div class="flex items-center gap-1 text-[9px] font-bold">
-<span class="material-symbols-rounded text-accent text-sm">security</span> Compra 100% Segura
-                </div>
-<div class="flex items-center gap-1 text-[9px] font-bold">
-<span class="material-symbols-rounded text-accent text-sm">lock</span> Dados Protegidos
-                </div>
-<div class="flex items-center gap-1 text-[9px] font-bold">
-<span class="material-symbols-rounded text-accent text-sm">verified</span> Produto Original
-                </div>
-</div>
-</section>
-<section class="mb-12">
-<h2 class="text-xl font-black text-center mb-8">O que nossos clientes dizem</h2>
-<div class="space-y-4">
-<div class="bg-slate-50 dark:bg-slate-900 p-4 rounded-2xl">
+<div class="bg-gray-50 dark:bg-card-dark p-5 rounded-lg border border-gray-100 dark:border-gray-700">
 <div class="flex justify-between items-start mb-3">
 <div class="flex items-center gap-3">
-<img alt="Carlos Silva" class="w-10 h-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIhM_Z4aOEtpjPYYq3OvouxAYYBgQ6XNA6MDGMdQeR-cXk_YB5BMyqHlKfOD6WdVaz5UoC1o50aFfCsCjhLiAvbnjvZl9xaC30WotMA3O3S9umqvr6MLtzWpbqWG_hJna1mWeITd0mURemH-IUhBXiJzqq2gYHGTT_GQhJTi-pDDX1De5IrQNORf2AzSbz_-Yw3Ul6DK2NpjBpMvL6arkaxbufLCwPgsAUjAZS-1I-dsvDvLok4JE9oUug0MxOqbDhcUGVtsNj44og"/>
+<div class="w-10 h-10 rounded-full bg-gray-300 overflow-hidden">
+<img alt="User avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNlWwycrbWEJImoJHhVwATL7PPpDTr3aJkV13l7pIgT4kuZ6Jg0TOYr0o-u2UCBYo6TTyAWuu1HtLbbWHg0lseHphegyMdkjkJzzZhpoDKMHfCs6N_Q-QT74UFOsG5Wldar6gJniKPtaZsNKi78j-c-nSPBA4O31kfydvzu9gSaPV_8BOM-wrDw80ssKy8qgC967IDq9CUKBdk8vcyuVrYKPeUumL1sLaK02mPUU6UH-A12CV5xQfkLUBaOkBdzDILqqIhfK_wZkQ"/>
+</div>
 <div>
-<p class="text-xs font-bold">Carlos Silva</p>
-<p class="text-[9px] text-slate-500">São Paulo - SP</p>
+<h4 class="font-bold text-xs text-gray-900 dark:text-white">Carlos Silva</h4>
+<p class="text-[10px] text-gray-500">São Paulo - SP</p>
 </div>
 </div>
-<div class="flex text-amber-400">
-<span class="material-symbols-rounded text-sm">star</span>
-<span class="material-symbols-rounded text-sm">star</span>
-<span class="material-symbols-rounded text-sm">star</span>
-<span class="material-symbols-rounded text-sm">star</span>
-<span class="material-symbols-rounded text-sm">star</span>
+<div class="flex text-yellow-400 text-xs">
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
 </div>
 </div>
-<p class="text-xs font-bold mb-1">Chegou super rápido!</p>
-<p class="text-[11px] text-slate-600 dark:text-slate-400 leading-relaxed mb-3">Comprei na pré-venda da Copa passada e foi incrível. Chegou antes do lançamento oficial e consegui começar a coleção antes de todo mundo. Super recomendo!</p>
-<div class="flex justify-between items-center">
-<div class="flex items-center gap-1 text-[9px] font-bold text-accent">
-<span class="material-symbols-rounded text-xs">verified</span> Compra verificada
-                        </div>
-<p class="text-[9px] text-slate-400">2 dias atrás</p>
+<h5 class="font-bold text-xs mb-1 text-gray-900 dark:text-white">Chegou super rápido!</h5>
+<p class="text-[11px] text-gray-600 dark:text-gray-300 leading-relaxed">Comprei na pré-venda da Copa passada e foi incrível. Chegou antes do lançamento oficial e consegui começar a coleção antes de todo mundo. Super recomendo!</p>
+<div class="mt-2 text-[10px] flex gap-2">
+<span class="text-green-600 dark:text-green-400 font-medium">Compra verificada</span>
+<span class="text-gray-400">2 dias atrás</span>
 </div>
 </div>
-<div class="bg-slate-50 dark:bg-slate-900 p-4 rounded-2xl">
+<div class="bg-gray-50 dark:bg-card-dark p-5 rounded-lg border border-gray-100 dark:border-gray-700">
 <div class="flex justify-between items-start mb-3">
 <div class="flex items-center gap-3">
-<img alt="Amanda Costa" class="w-10 h-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmnV2BGfLbDnkNMtB2ty1ZSLPkscaUfWnxlQVczE4z7Q8k87rwEVMlhkitvUKVJMXAO3xd6shDlRqwfzkKv7QYdQ90AoCZ8JkYxH9uh8W2l_3eUyMrzuA77oy7eH0KDBz6iq7YlFnI0ulDbsduxUrr52IcIU17mHNWiPVn0v5B793cWE3NB0jpUFF2AEIbaECFGhqWImGjVZEDcz-eQJiWh0vCC5IbEGIuuMnrf9w2aBxIggMyOOoGDfdcOTsG64KQIMkacZTUrxcp"/>
+<div class="w-10 h-10 rounded-full bg-gray-300 overflow-hidden">
+<img alt="User avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP8sgIcfnRLfh-K7B4cny6UuoGaEI5dmFq8MLFrdWWq4vrLmVObyN8fHCwWzzHxVEcEkuKHO7URy5uDQxYyJ_IlHXPjys9qY3N961nJLjziHf6ONrre633x92X_DZ9_l-MbK3kCMIfZYWO15nLmJEC18UUC2ElGDGYlRU3IjJRh2W4XJAQEzwpsYB48ESXPxpsexfWieQ8SMzaohxVPKJyzZznjMrejKe8gqKTY8N0UapJ_jwwuDGkKkUOo0F-hWokiJG7SjSLJUE"/>
+</div>
 <div>
-<p class="text-xs font-bold">Amanda Costa</p>
-<p class="text-[9px] text-slate-500">Rio de Janeiro - RJ</p>
+<h4 class="font-bold text-xs text-gray-900 dark:text-white">Amanda Costa</h4>
+<p class="text-[10px] text-gray-500">Rio de Janeiro - RJ</p>
 </div>
 </div>
-<div class="flex text-amber-400">
-<span class="material-symbols-rounded text-sm">star</span>
-<span class="material-symbols-rounded text-sm">star</span>
-<span class="material-symbols-rounded text-sm">star</span>
-<span class="material-symbols-rounded text-sm">star</span>
-<span class="material-symbols-rounded text-sm">star</span>
+<div class="flex text-yellow-400 text-xs">
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
 </div>
 </div>
-<p class="text-xs font-bold mb-1">Melhor preço que encontrei</p>
-<p class="text-[11px] text-slate-600 dark:text-slate-400 leading-relaxed mb-3">Pesquisei em vários lugares e aqui foi onde encontrei o melhor preço. Ainda veio com frete grátis! Meu filho ficou muito feliz com o álbum.</p>
-<div class="flex justify-between items-center">
-<div class="flex items-center gap-1 text-[9px] font-bold text-accent">
-<span class="material-symbols-rounded text-xs">verified</span> Compra verificada
-                        </div>
-<p class="text-[9px] text-slate-400">3 dias atrás</p>
+<h5 class="font-bold text-xs mb-1 text-gray-900 dark:text-white">Melhor preço que encontrei</h5>
+<p class="text-[11px] text-gray-600 dark:text-gray-300 leading-relaxed">Pesquisei em vários lugares e aqui foi onde encontrei o melhor preço. Ainda veio com frete grátis! Meu filho ficou muito feliz com o álbum.</p>
+<div class="mt-2 text-[10px] flex gap-2">
+<span class="text-green-600 dark:text-green-400 font-medium">Compra verificada</span>
+<span class="text-gray-400">3 dias atrás</span>
 </div>
 </div>
-<div class="bg-slate-50 dark:bg-slate-900 p-4 rounded-2xl">
+<div class="bg-gray-50 dark:bg-card-dark p-5 rounded-lg border border-gray-100 dark:border-gray-700">
 <div class="flex justify-between items-start mb-3">
 <div class="flex items-center gap-3">
-<img alt="Roberto Almeida" class="w-10 h-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMkHGjHWuxH4HrOYdbB8bBxYmC_xoqlG7XTY_3OoTBbOelOKpBJKUjChWbeNUJEbIM32_Q-ZCY4gZHajpgdtJoacRDDl0UiWMqz4NZwZm8Olnd5URi77wFNyiUc1C0rTjdsXvjgWzNvJfrebjzDcpOstdIFzhWwQHWSDph2qxYBClgD-aBQbejumB95zjULA1EvNVKGQAjzZcUEmiCiZmhvKa736SSkl0eV62GIA-uCm__1cHKo3yecwFgiCC03RxFpXZlR5zgWUzH"/>
+<div class="w-10 h-10 rounded-full bg-gray-300 overflow-hidden">
+<img alt="User avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyBrKGH4j2V8StVVbFvuZEnI5iJ39yu3AOvrXjCqEquMjrOliJKzVY7uXDW7P5UFohgXBSiqNvfVX90tSHMfhCj79aphWXjoU5UfVRj2Gd-Zaan-ja_AgGIz00HXGRz2y1j1Jtav8MEmQxdK6Ag26Q0bptWcK52JZ1bnTI3o2CTIUPq0Hsz6s0Va4UzgWH-Ayt2Q3KjCxRdFvGopCfmf4A7VVokflKrwnDz7n00WrJdIpK3XyUscOdn88iGxCjsFOlQCZs96LX5lg"/>
+</div>
 <div>
-<p class="text-xs font-bold">Roberto Almeida</p>
-<p class="text-[9px] text-slate-500">Belo Horizonte - MG</p>
+<h4 class="font-bold text-xs text-gray-900 dark:text-white">Roberto Almeida</h4>
+<p class="text-[10px] text-gray-500">Belo Horizonte - MG</p>
 </div>
 </div>
-<div class="flex text-amber-400">
-<span class="material-symbols-rounded text-sm">star</span>
-<span class="material-symbols-rounded text-sm">star</span>
-<span class="material-symbols-rounded text-sm">star</span>
-<span class="material-symbols-rounded text-sm">star</span>
-<span class="material-symbols-rounded text-sm">star</span>
+<div class="flex text-yellow-400 text-xs">
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
 </div>
 </div>
-<p class="text-xs font-bold mb-1">Produto original garantido</p>
-<p class="text-[11px] text-slate-600 dark:text-slate-400 leading-relaxed mb-3">Tinha medo de comprar online e vir produto falsificado, mas veio tudo original com selo da Panini. Álbum de excelente qualidade e figurinhas perfeitas.</p>
-<div class="flex justify-between items-center">
-<div class="flex items-center gap-1 text-[9px] font-bold text-accent">
-<span class="material-symbols-rounded text-xs">verified</span> Compra verificada
-                        </div>
-<p class="text-[9px] text-slate-400">4 dias atrás</p>
+<h5 class="font-bold text-xs mb-1 text-gray-900 dark:text-white">Produto original garantido</h5>
+<p class="text-[11px] text-gray-600 dark:text-gray-300 leading-relaxed">Tinha medo de comprar online e vir produto falsificado, mas veio tudo original com selo da Panini. Álbum de excelente qualidade e figurinhas perfeitas.</p>
+<div class="mt-2 text-[10px] flex gap-2">
+<span class="text-green-600 dark:text-green-400 font-medium">Compra verificada</span>
+<span class="text-gray-400">4 dias atrás</span>
 </div>
 </div>
 </div>
-</section>
-<section class="mb-12">
-<h2 class="text-xl font-black text-center mb-8">Dúvidas Frequentes</h2>
+</div>
+<div class="w-full mb-12">
+<h2 class="text-xl font-bold text-center mb-8">Dúvidas Frequentes</h2>
 <div class="space-y-2">
-<details class="group bg-slate-50 dark:bg-slate-900 rounded-xl overflow-hidden">
-<summary class="flex items-center justify-between p-4 cursor-pointer list-none font-bold text-xs">
-                        Quando meu pedido será entregue?
-                        <span class="material-symbols-rounded group-open:rotate-180 transition-transform">expand_more</span>
+<details class="group bg-gray-50 dark:bg-card-dark rounded-lg">
+<summary class="flex justify-between items-center font-bold cursor-pointer list-none p-4 text-xs text-gray-900 dark:text-white">
+<span>Quando meu pedido será entregue?</span>
+<span class="transition group-open:rotate-180">
+<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+</span>
 </summary>
-<div class="px-4 pb-4 text-xs text-slate-600 dark:text-slate-400">
-                        O envio é prioritário para pré-venda. Você receberá seu código de rastreio em até 24h úteis após a confirmação do pagamento.
+<div class="text-xs text-gray-600 dark:text-gray-400 p-4 pt-0">
+                        Os pedidos serão despachados com prioridade. O prazo médio é de 5 a 10 dias úteis após a confirmação do pagamento, variando de acordo com a sua região.
                     </div>
 </details>
-<details class="group bg-slate-50 dark:bg-slate-900 rounded-xl overflow-hidden">
-<summary class="flex items-center justify-between p-4 cursor-pointer list-none font-bold text-xs">
-                        As figurinhas e o álbum são originais?
-                        <span class="material-symbols-rounded group-open:rotate-180 transition-transform">expand_more</span>
+<details class="group bg-gray-50 dark:bg-card-dark rounded-lg">
+<summary class="flex justify-between items-center font-bold cursor-pointer list-none p-4 text-xs text-gray-900 dark:text-white">
+<span>As figurinhas e o álbum são originais?</span>
+<span class="transition group-open:rotate-180">
+<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+</span>
 </summary>
-<div class="px-4 pb-4 text-xs text-slate-600 dark:text-slate-400">
-                        Sim! Todos os nossos produtos são 100% originais Panini, acompanham nota fiscal e selo de autenticidade.
+<div class="text-xs text-gray-600 dark:text-gray-400 p-4 pt-0">
+                        Sim! Todos os produtos são oficiais e licenciados pela Panini e FIFA. Você receberá o álbum capa dura e os pacotes lacrados originais.
                     </div>
 </details>
-<details class="group bg-slate-50 dark:bg-slate-900 rounded-xl overflow-hidden">
-<summary class="flex items-center justify-between p-4 cursor-pointer list-none font-bold text-xs">
-                        Posso escolher quais figurinhas vou receber?
-                        <span class="material-symbols-rounded group-open:rotate-180 transition-transform">expand_more</span>
+<details class="group bg-gray-50 dark:bg-card-dark rounded-lg">
+<summary class="flex justify-between items-center font-bold cursor-pointer list-none p-4 text-xs text-gray-900 dark:text-white">
+<span>Posso escolher quais figurinhas vou receber?</span>
+<span class="transition group-open:rotate-180">
+<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+</span>
 </summary>
-<div class="px-4 pb-4 text-xs text-slate-600 dark:text-slate-400">
-                        Os pacotes são lacrados de fábrica, garantindo a aleatoriedade e a emoção de abrir cada um, conforme o padrão oficial da coleção.
+<div class="text-xs text-gray-600 dark:text-gray-400 p-4 pt-0">
+                        Os pacotes são lacrados e sortidos de fábrica pela Panini, não sendo possível escolher figurinhas específicas.
                     </div>
 </details>
-<details class="group bg-slate-50 dark:bg-slate-900 rounded-xl overflow-hidden">
-<summary class="flex items-center justify-between p-4 cursor-pointer list-none font-bold text-xs">
-                        E se eu receber figurinhas repetidas?
-                        <span class="material-symbols-rounded group-open:rotate-180 transition-transform">expand_more</span>
+<details class="group bg-gray-50 dark:bg-card-dark rounded-lg">
+<summary class="flex justify-between items-center font-bold cursor-pointer list-none p-4 text-xs text-gray-900 dark:text-white">
+<span>E se eu receber figurinhas repetidas?</span>
+<span class="transition group-open:rotate-180">
+<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+</span>
 </summary>
-<div class="px-4 pb-4 text-xs text-slate-600 dark:text-slate-400">
-                        Receber figurinhas repetidas faz parte da diversão e da tradição de troca entre colecionadores!
+<div class="text-xs text-gray-600 dark:text-gray-400 p-4 pt-0">
+                        Figurinhas repetidas fazem parte da diversão de colecionar! Você pode trocá-las com amigos ou em pontos de troca oficiais.
                     </div>
 </details>
-<details class="group bg-slate-50 dark:bg-slate-900 rounded-xl overflow-hidden">
-<summary class="flex items-center justify-between p-4 cursor-pointer list-none font-bold text-xs">
-                        O frete é realmente grátis?
-                        <span class="material-symbols-rounded group-open:rotate-180 transition-transform">expand_more</span>
+<details class="group bg-gray-50 dark:bg-card-dark rounded-lg">
+<summary class="flex justify-between items-center font-bold cursor-pointer list-none p-4 text-xs text-gray-900 dark:text-white">
+<span>O frete é realmente grátis?</span>
+<span class="transition group-open:rotate-180">
+<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+</span>
 </summary>
-<div class="px-4 pb-4 text-xs text-slate-600 dark:text-slate-400">
-                        Sim, oferecemos frete grátis para todo o território nacional nesta promoção exclusiva de pré-venda.
+<div class="text-xs text-gray-600 dark:text-gray-400 p-4 pt-0">
+                        Sim, para todos os kits listados nesta página promocional, o frete é grátis para todo o território nacional.
                     </div>
 </details>
-<details class="group bg-slate-50 dark:bg-slate-900 rounded-xl overflow-hidden">
-<summary class="flex items-center justify-between p-4 cursor-pointer list-none font-bold text-xs">
-                        Quais formas de pagamento são aceitas?
-                        <span class="material-symbols-rounded group-open:rotate-180 transition-transform">expand_more</span>
+<details class="group bg-gray-50 dark:bg-card-dark rounded-lg">
+<summary class="flex justify-between items-center font-bold cursor-pointer list-none p-4 text-xs text-gray-900 dark:text-white">
+<span>Quais formas de pagamento são aceitas?</span>
+<span class="transition group-open:rotate-180">
+<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+</span>
 </summary>
-<div class="px-4 pb-4 text-xs text-slate-600 dark:text-slate-400">
-                        Aceitamos PIX (com desconto adicional), Cartão de Crédito em até 12x e Boleto Bancário.
+<div class="text-xs text-gray-600 dark:text-gray-400 p-4 pt-0">
+                        Aceitamos PIX com desconto especial, e cartões de crédito das principais bandeiras.
                     </div>
 </details>
-<details class="group bg-slate-50 dark:bg-slate-900 rounded-xl overflow-hidden">
-<summary class="flex items-center justify-between p-4 cursor-pointer list-none font-bold text-xs">
-                        Posso cancelar meu pedido?
-                        <span class="material-symbols-rounded group-open:rotate-180 transition-transform">expand_more</span>
+<details class="group bg-gray-50 dark:bg-card-dark rounded-lg">
+<summary class="flex justify-between items-center font-bold cursor-pointer list-none p-4 text-xs text-gray-900 dark:text-white">
+<span>Posso cancelar meu pedido?</span>
+<span class="transition group-open:rotate-180">
+<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+</span>
 </summary>
-<div class="px-4 pb-4 text-xs text-slate-600 dark:text-slate-400">
-                        Sim, garantimos o direito de arrependimento em até 7 dias após o recebimento do produto, conforme o Código de Defesa do Consumidor.
+<div class="text-xs text-gray-600 dark:text-gray-400 p-4 pt-0">
+                        Sim, conforme o Código de Defesa do Consumidor, você tem até 7 dias após o recebimento para solicitar a devolução por arrependimento.
                     </div>
 </details>
 </div>
-</section>
-<footer class="text-center pb-8">
-<img alt="Panini Logo" class="h-6 mx-auto mb-4 opacity-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpp0jcnlSnFQTgjN6j-3fqnw7wsyCpzz6krKSnxRl7HeYkD7oySELr2kjyjOe86DJhf6Wi-6be6MWI6DQvUBSznviQcU9dVLL9s9f0qJMRezo8j3wnu4gyruvfLl0zGEKNA3dcCN4fWfTJ5nTDM5iH-pPgNbIstoU4-XZIZFBlJCjIuTKw7omvFcEd23FBa1WX-jxaIyqhpzm2rvJmZ9gs7y2t-Q4udQ-k5W-5wyLuN9VukuMN_GMrf6R9efNBD3s_yFjeAeaC6xKq"/>
-<div class="flex items-center justify-center gap-1 text-[10px] font-bold text-accent mb-2">
-<span class="material-symbols-rounded text-xs">verified_user</span> Compra 100% Segura
-            </div>
-<p class="text-[9px] text-slate-400">© 2024 Panini Group. Todos os direitos reservados.</p>
-</footer>
+</div>
 </main>
-<div class="fixed bottom-0 left-0 right-0 p-4 bg-white/80 dark:bg-background-dark/80 backdrop-blur-lg border-t border-slate-200 dark:border-slate-800 md:hidden z-40">
-<button class="w-full bg-accent hover:bg-green-600 text-white font-black py-4 rounded-xl shadow-lg shadow-accent/20 uppercase text-sm tracking-widest" onclick="document.getElementById('kits').scrollIntoView({behavior: 'smooth'})">
-            GARANTIR MEU KIT AGORA
-        </button>
+<footer class="bg-gray-50 dark:bg-gray-900 py-8 border-t border-gray-200 dark:border-gray-800">
+<div class="container mx-auto px-4 text-center">
+<div class="flex justify-center mb-4">
+<div class="h-8 md:h-10 bg-panini-yellow px-2 flex items-center justify-center border-2 border-black/10 rounded-sm">
+<span class="font-extrabold text-panini-red tracking-widest text-lg md:text-xl italic px-1" style="text-shadow: 1px 1px 0px rgba(0,0,0,0.1);">PANINI</span>
 </div>
+</div>
+<div class="flex items-center justify-center gap-2 text-xs text-gray-500 dark:text-gray-400 mb-2">
+<span class="material-icons text-green-500 text-sm">lock</span>
+<span>Compra 100% Segura</span>
+</div>
+<p class="text-[10px] text-gray-400 dark:text-gray-500 mt-4 max-w-lg mx-auto">
+                Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usar resultados reais.
+            </p>
+</div>
+</footer>
 <script>
-        // Simple selection logic to highlight the chosen kit
-        const radioButtons = document.querySelectorAll('input[name="kit"]');
-        const labels = document.querySelectorAll('label');
-        radioButtons.forEach(radio => {
-            radio.addEventListener('change', (e) => {
-                labels.forEach(label => {
-                    label.classList.remove('border-accent', 'bg-accent/5', 'dark:bg-accent/10');
-                    label.classList.add('border-slate-200', 'dark:border-slate-800');
-                    // Reset radio circle styles
-                    const circle = label.querySelector('.w-6.h-6');
-                    if (circle) {
-                        circle.classList.remove('border-accent', 'bg-accent');
-                        circle.classList.add('border-slate-300');
-                    }
-                });
-                if (e.target.checked) {
-                    const parentLabel = e.target.closest('label');
-                    parentLabel.classList.remove('border-slate-200', 'dark:border-slate-800');
-                    parentLabel.classList.add('border-accent', 'bg-accent/5', 'dark:bg-accent/10');
-                    const circle = parentLabel.querySelector('.w-6.h-6');
-                    if (circle) {
-                        circle.classList.remove('border-slate-300');
-                        circle.classList.add('border-accent', 'bg-accent');
-                    }
-                }
-            });
-        });
-    </script>
+        // Lógica de Redirecionamento de Checkout
+        const checkoutLinks = {
+            'basico': 'LINK_AQUI_KIT_1',
+            'iniciante': 'LINK_AQUI_KIT_2',
+            'campeao': 'LINK_AQUI_KIT_3',
+            'colecionador': 'LINK_AQUI_KIT_4'
+        };
 
+        document.getElementById('finalizarCompra').addEventListener('click', function() {
+            const kitSelecionado = document.querySelector('input[name="kit"]:checked');
+            if (kitSelecionado && checkoutLinks[kitSelecionado.value]) {
+                window.location.href = checkoutLinks[kitSelecionado.value];
+            } else {
+                alert('Por favor, selecione um kit para continuar.');
+            }
+        });
+
+        // Simple countdown timer logic
+        function startTimer(duration, display) {
+            var timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+                display.textContent = minutes + ":" + seconds;
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+        window.onload = function () {
+            var fourteenMinutes = 60 * 14 + 50,
+                display = document.querySelector('#timer');
+            startTimer(fourteenMinutes, display);
+        };
+    </script>
 </body></html>
