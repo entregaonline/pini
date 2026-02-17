@@ -410,45 +410,24 @@
             </p>
 </div>
 </footer>
-<div class="mt-8 space-y-4">
-    <button id="btn-checkout" class="w-full bg-primary hover:bg-green-600 text-white font-black text-lg py-5 rounded-xl transition-all shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 uppercase tracking-wide">
-        Garantir meu kit agora
-    </button>
-    <p class="text-center text-xs text-slate-400 font-medium">Frete Grátis para Todo Brasil</p>
-</div>
-
 <script>
-    // 1. EDITE AQUI OS SEUS LINKS DE CHECKOUT
     const linksCheckout = {
-        "Kit Básico": "cavalodariqueza.site",
-        "Kit Iniciante": "https://checkout.com/link-iniciante",
-        "Kit Campeão": "https://checkout.com/link-campeao",
-        "Kit Colecionador": "https://checkout.com/link-colecionador"
+        "Kit Básico": "https://seu-checkout.com/basico",
+        "Kit Iniciante": "https://seu-checkout.com/iniciante",
+        "Kit Campeão": "https://seu-checkout.com/campeao",
+        "Kit Colecionador": "https://seu-checkout.com/colecionador"
     };
 
-    const botao = document.getElementById('btn-checkout');
-    
-    // Função para capturar qual kit está marcado e redirecionar
-    botao.addEventListener('click', function() {
-        // Encontra o input do tipo radio que está marcado com o nome "kit"
-        const kitSelecionado = document.querySelector('input[name="kit"]:checked');
-        
-        if (kitSelecionado) {
-            // Pega o nome do kit dentro da label do input selecionado
-            const nomeDoKit = kitSelecionado.closest('label').querySelector('h3').innerText.trim();
-            
-            // Pega o link correspondente no nosso objeto acima
-            const urlFinal = linksCheckout[nomeDoKit];
-
-            if (urlFinal) {
-                window.location.href = urlFinal;
-            } else {
-                alert("Erro: Link de checkout não configurado para este kit.");
+    document.getElementById('btn-checkout').addEventListener('click', function() {
+        const selecionado = document.querySelector('input[name="kit"]:checked');
+        if (selecionado) {
+            const label = selecionado.closest('label');
+            const nomeKit = label.querySelector('h3').innerText.trim();
+            const url = linksCheckout[nomeKit];
+            if (url) {
+                window.location.href = url;
             }
-        } else {
-            alert("Por favor, selecione um kit primeiro.");
         }
     });
 </script>
-
 </body></html>
